@@ -13,7 +13,7 @@ public class StreamDebugging
 
 
        Integer[] oddPrimeNumbersGreaterThanFive= Stream.of(numbers)
-               .distinct().sorted().filter(i -> i % 2 != 0).filter(i->i>4).filter(StreamDebugging::isPrime)
+               .distinct().sorted().filter(i -> i % 2 != 0).filter(i->i>4).filter(i-> isPrime(i))
                .toArray(Integer[]::new);
 
         System.out.println("Even numbers greater than four :"+ Arrays.toString(oddPrimeNumbersGreaterThanFive));
