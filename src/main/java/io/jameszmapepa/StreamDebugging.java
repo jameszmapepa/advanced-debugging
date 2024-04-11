@@ -16,7 +16,7 @@ public class StreamDebugging
                .distinct().sorted().filter(i -> i % 2 != 0).filter(i->i>4).filter(i-> isPrime(i))
                .toArray(Integer[]::new);
 
-        System.out.println("Even numbers greater than four :"+ Arrays.toString(oddPrimeNumbersGreaterThanFive));
+        System.out.println("Even prime numbers greater than four :"+ Arrays.toString(oddPrimeNumbersGreaterThanFive));
     }
 
     public static boolean isPrime(int number) {
