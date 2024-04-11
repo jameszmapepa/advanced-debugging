@@ -1,10 +1,9 @@
 package io.jameszmapepa;
 
 
+import java.util.stream.Stream;
+
 public class BreakpointsDialog
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+
 }
