@@ -1,11 +1,11 @@
 package io.jameszmapepa;
 
 
-public class SettingBreakpoints
+public class FieldAndMethodBreakpoints
 {
     private int[] numbers;
 
-    public SettingBreakpoints(int[] initialNumbers) {
+    public FieldAndMethodBreakpoints(int[] initialNumbers) {
         this.numbers = initialNumbers;
     }
 
@@ -26,7 +26,7 @@ public class SettingBreakpoints
 
     public static void main(String[] args) {
         int[] initialNumbers = {1, 2, 3};
-        SettingBreakpoints processor = new SettingBreakpoints(initialNumbers);
+        FieldAndMethodBreakpoints processor = new FieldAndMethodBreakpoints(initialNumbers);
 
         processor.printNumbers();
         processor.addNumber(4);
